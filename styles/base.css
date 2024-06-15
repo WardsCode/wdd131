@@ -1,0 +1,154 @@
+:root{
+
+    --title-font: "Lato", sans-serif;
+    --paragraph-font: "Outfit", sans-serif;
+    --special-font: "Dancing Script", sans-serif;
+
+    --title-color: #ED9455;
+    --secondary-title-color: #FFBB70;
+    --boxes-color: #FFEC9E;
+    --light-boxes-color: #FFFBDA;
+}
+
+
+*{
+    max-width: 900px;
+    margin: auto;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: var(--title-color);
+    text-align: center;
+    align-content: center;
+    font-family: var(--title-font);
+    
+}
+
+nav{
+    background-color: var(--secondary-title-color);
+    padding: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;   
+    font-family: var(--title-font);
+}
+nav a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration:overline;
+    color: var(--boxes-color);
+}
+
+main{
+    max-width: 800px;
+    text-align: center;
+    margin: auto; /centers the main/
+    height: 500px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5px;
+}
+
+.card{
+    border: solid black 1px;
+    height: auto;
+    border-radius: 15px;
+    margin: 5px;
+    background-color: var(--light-boxes-color);
+}
+.card p{
+    font-family: var(--paragraph-font);
+}
+.card h3{
+    font-family: var(--title-font);
+    padding: 10px;
+    background-color: var(--title-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#sectiondiv1{
+    display: flex;
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: solid black 0.5px;
+}
+#sectiondiv1 img{
+    border-radius: 5px;
+    height: auto;
+    max-width: 150px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+
+#sectiondiv12{
+    display: flex;
+    height: auto;
+    margin: 10px;
+}
+#sectiondiv12 img{
+    border-radius: 5px;
+    height: auto;
+    max-width: 150px;
+    margin: 5px;
+    object-fit: cover;
+}
+#sectiondiv12 h4{
+    font-family: var(--title-font);
+}
+
+.lists{
+    width: fit-content;
+}
+
+.lists a{
+    text-decoration: none;
+}
+
+footer{
+    background-color: var(--title-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+
+/*
+fonts for titles: Lato
+Fonts for text fields: Outfit 
+Fonts for specials: Dancing Script
+
+Color Schemas
+Titles:     ED9455       rgb(255, 251, 218)
+semitiles:  FFBB70       rgb(255, 236, 158)
+boxes:      FFEC9E       rgb(255, 187, 112)
+lightboxes: FFFBDA       rgb(237, 148, 85)
+
+body
+    header
+        h1
+        nav
+            a
+            a
+            a
+            a
+    main
+        section (.card)
+            h3
+            div (#sectiondiv1)
+                p
+                img
+        section (.card)
+            h2
+            div (#sectiondiv2) 
+                p
+                img
+    footer
+        p
+        p
+
+
+*/
