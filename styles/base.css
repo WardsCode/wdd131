@@ -45,7 +45,7 @@ a:hover{
 main{
     max-width: 800px;
     text-align: center;
-    margin: auto; /centers the main/
+    margin: auto; 
     height: 500px;
     display: grid;
     grid-template-columns: 2fr 1fr;
