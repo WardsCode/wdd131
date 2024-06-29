@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+.container-weather li{
+    list-style: none;
+}
 
 header{
     background-color: #ce2b37;

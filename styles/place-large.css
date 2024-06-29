@@ -25,6 +25,7 @@
     .container-weather{
         bottom: 0;
         right: 0;
+        
     }
 
     .container-data h1, .container-weather h1{
@@ -43,8 +44,12 @@
         display: none;
     }
 
-    .container-weather::after{
-        
+    .container-weather li{
+        list-style: none;
+    }
+
+    .container-weather h1::after{
+        content: "⛅";
     }
 
 }
