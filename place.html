@@ -1,0 +1,140 @@
+<!doctype html>
+
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundmentals - Mateo Barrios </title>
+    <meta name="description" content="This page is the country or place web site I want to visit, with details about it">
+    <meta name="author" content="Mateo Barrios Acosta">
+    <link rel="stylesheet" href="styles/place-small.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    
+    <script src="scripts/place.js" defer></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+    </style>
+  </head>
+
+
+  <body>
+
+    <header>
+
+        <h1>Italy</h1>
+        
+    </header>
+
+
+    <main>
+
+        <div class="container-img">
+
+            <picture>
+                <source media="(min-width:800px)" srcset="images/italy-large.webp">
+                <img src="images/italy-small.webp" alt="an italy img" width="500" height="1000">
+            </picture>
+
+        </div>
+
+        <div class="container-data">
+
+            <h1>Data</h1>
+
+            <dl>
+              <dt>Area: </dt>
+              <dd>116,350 sq mil</dd>
+
+              <dt>Population:</dt>
+              <dd>58,940,000 </dd>
+
+              <dt>Capital: </dt>
+              <dd> Roma</dd>
+
+              <dt>Languages: </dt>
+              <dd>Italian</dd>
+
+              <dt>Currency: </dt>
+              <dd>Euro €</dd>
+
+              <dt>Time Zone: </dt>
+              <dd>GMT+2</dd>
+
+              <dt>Calling Code: </dt>
+              <dd>+39</dd>
+
+              <dt>Internet TLD: </dt>
+              <dd>.it</dd>
+
+            </dl>
+
+            <!--
+            
+            <label for="">Area: </label>
+            <label for="">Population: </label>
+            <label for="">Capital: </label>
+            <label for="">Languages: </label>
+            <label for="">Currency: </label>
+            <label for="">Time Zone: </label>
+            <label for="">Calling Code: </label>
+            <label for="">Internet TLD: </label>
+            -->
+
+
+        </div>
+
+        <div class="container-weather">
+
+            <h1>Weather</h1>
+
+            <img src="images/weathericon.svg" alt="weather icon" width="100px" height=auto>
+
+            <dl>
+              <dt>Temperature: </dt>
+              <dd>26°C</dd>
+
+              <dt>Conditions:</dt>
+              <dd></dd>
+
+              <dt>Wind: </dt>
+              <dd> </dd>
+
+              <dt>Wind Chill: </dt>
+              <dd></dd>
+            </dl>
+
+            <!--
+            <label for="">Temperature: </label>
+            <label for="">Conditions: </label>
+            <label for="">Wind: </label>
+            <label for="">Wind Chill: </label>
+            -->
+
+          </div>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            &#169;<span id="currentYear"></span> Mateo Barrios Acosta - Barranquilla, Colombia
+          </p>
+    
+          <p>
+            <span id="lastModified"></span>
+          </p>
+
+
+    </footer>
+
+
+
+
+  </body>
+
+
+</html>

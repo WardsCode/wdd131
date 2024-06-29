@@ -1,0 +1,86 @@
+:root{
+
+    --title-font: "Lato", sans-serif;
+    --paragraph-font: "Outfit", sans-serif;
+    --special-font: "Dancing Script", sans-serif;
+
+
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: #ce2b37;
+    color: #ffffff;
+    text-align: center;
+    align-content: center;
+    font-family: var(--title-font);
+    min-height: 75px;
+}
+
+main{
+    background-color: #f2f2f2;
+}
+
+footer{
+    background-color:#009246 ;
+    color: #ffffff;
+    font-family: var(--paragraph-font);
+    text-align: center;
+    min-height: 75px;
+    align-content: center;
+}
+
+
+/**/
+
+
+.container-data{
+    font-family: var(--paragraph-font);
+    text-align: center;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 25px;
+    
+}
+
+.container-data h1{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+dl{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+}
+
+dt{
+    text-align: right;
+    font-weight: bolder;
+}
+
+dd{
+    text-align: left;
+}
+
+/**/
+
+
+.container-weather {
+    font-family: var(--paragraph-font);
+    text-align: center;
+    background-color: #ffffff;
+    margin: 15px;
+    padding: 25px;
+
+}
+
+.container-weather h1{
+    text-align: center;
+}

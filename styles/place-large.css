@@ -1,0 +1,50 @@
+
+.container-img img {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width: 800px) {
+
+    main{
+        position: relative;
+    }
+
+
+    .container-data, .container-weather{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+        margin: 20px;
+    }
+
+    .container-data{
+        top: 0;
+
+    }
+
+    .container-weather{
+        bottom: 0;
+        right: 0;
+    }
+
+    .container-data h1, .container-weather h1{
+
+        background-color: #009246;   
+        text-align: left;
+        padding: 5px;
+        color: #ffffff;
+        font-weight: 500;
+        position: relative;
+        right: 40px;
+    }
+
+
+    .container-weather img{
+        display: none;
+    }
+
+    .container-weather::after{
+        
+    }
+
+}
