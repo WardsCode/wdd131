@@ -87,3 +87,8 @@ dd{
 .container-weather h1{
     text-align: center;
 }
+
+.container-weather img{
+    width: 10px;
+    height: auto;
+}
