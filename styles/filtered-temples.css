@@ -1,0 +1,119 @@
+:root {
+    --title-font: "Lato", sans-serif;
+    --paragraph-font: "Outfit", sans-serif;
+    --special-font: "Dancing Script", sans-serif;
+    --title-color: #ED9455;
+    --secondary-title-color: #FFBB70;
+    --boxes-color: #FFEC9E;
+    --light-boxes-color: #FFFBDA;
+  }
+  
+  * {
+    max-width: 1380px;
+    margin: auto;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: var(--title-color);
+    font-family: var(--title-font);
+    padding: 5px;
+  }
+  
+  header h1 {
+    color: var(--boxes-color);
+    text-align: center;
+  }
+  
+  #menu {
+    display: block; 
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--title-color);
+    color: var(--boxes-color);
+  }
+  
+  #menu::before {
+    content: "☰";
+  }
+  
+  #menu.show::before {
+    content: "X";
+  }
+  
+  nav {
+    font-family: var(--title-font);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--boxes-color);
+  }
+  
+  .navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+  }
+  
+  .navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    font-weight: 700;
+    transition: 0.5s;
+    text-decoration: none;
+    max-width: 760px;
+  }
+  
+  .navigation a:hover {
+    background-color: black;
+  }
+  
+  .navigation li {
+    display: none;
+  }
+  
+  .show li {
+    display: block;
+  }
+  
+  main {
+    margin: auto;
+  }
+  
+  main h2 {
+    text-align: center;
+    font-family: var(--title-font);
+    margin: 10px;
+  }
+  
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    padding: 5px;
+  }
+  
+  .temple-card {
+    background-color: var(--light-boxes-color);
+    border: 1px solid var(--title-color);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  figcaption {
+    text-align: center;
+    font-family: var(--paragraph-font);
+  }
+  
+  
+  footer {
+    margin-top: 5px;
+    background-color: var(--title-color);
+    font-family: var(--paragraph-font);
+    text-align: center;
+  }
+  
