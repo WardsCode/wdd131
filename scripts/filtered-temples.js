@@ -91,7 +91,6 @@ const temples = [
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
 
-// Add a click event listender to the hamburger button and use a callback function that toggles the list element's list of classes.
 hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
@@ -105,13 +104,10 @@ document.addEventListener("DOMContentLoaded", () => {
 	container.id = "container";
   
 	const filterTemples = (filter) => {
-	  // Clear previous content
 	  container.innerHTML = '';
   
-	  // Apply filter
 	  const filteredTemples = temples.filter(filter);
   
-	  // Create and append temple cards
 	  filteredTemples.forEach((temple) => {
 		const templeCard = document.createElement("div");
 		templeCard.classList.add("temple-card");
@@ -145,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	  small: (temple) => temple.area < 10000,
 	};
   
-	// Event listeners for navigation links
 	document.getElementById("home-link").addEventListener("click", () => filterTemples(filters.home));
 	document.getElementById("old-link").addEventListener("click", () => filterTemples(filters.old));
 	document.getElementById("new-link").addEventListener("click", () => filterTemples(filters.new));
@@ -155,19 +150,11 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Initial load
 	filterTemples(filters.home);
   });
-
-
-
-
   
 const year = document.querySelector("#currentYear");
 const lastm = document.querySelector("#lastModified");
 const today = new Date();
-
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
-
-
 const date = new Date(document.lastModified);
-
 lastm.innerHTML = `<span class="highlight">${date}</span>`;
 
