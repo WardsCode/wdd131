@@ -1,0 +1,99 @@
+:root{
+    --primary_color: #ffA101;
+    --secondary_color: #FAe6b1;
+    --background_color: #b3dee5;
+    --text_color: #000000;
+    --accent_color: #31525b;
+
+
+}
+
+
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+
+}
+
+body{
+    background-color: var(--background_color);
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    background-color: var(--hyunday);
+    
+}
+
+
+
+div img{
+    margin: auto;
+    width: 100%;
+}
+
+
+#font1{
+    font-family: "bubblegums", sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#font2{
+    font-family: "acme", sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#font3{
+    font-family: "Bangers", sans-serif;
+    font-weight: bold;
+    font-size: larger;
+}
+
+h2, h1, h3{
+    font-family: "acme";
+}
+
+
+div{
+    background-color: var(--primary_color);
+}
+
+h2{
+    font-weight: bolder;
+}
+
+#back1{
+    background-color: var(--background_color);
+}
+
+#back2{
+    border: 1px solid black;
+
+}
+
+#headin{
+    background-color: var(--text_color);
+    color: white;
+}
+
+#back3{
+    background-color: var(--secondary_color);
+}
+
+
+#accent{
+    background-color: var(--accent_color);
+    font-weight: bolder;
+    color: white
+}
+
+p, ul{
+    font-family: "bubblegum sans", sans-serif;
+}
