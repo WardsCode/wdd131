@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - Mateo Barrios </title>
+    <meta name="description" content="This page contains a form and it is to example how to create one, using JS and CSS.">
+    <meta name="author" content="Mateo Barrios Acosta">
+    <script src="script/form.js" ></script>
+    <link rel="stylesheet" href="styles/form.css">
+
+  
+
+  </head>
+
+  <body>
+    
+    <main>
+      <div> <h1>Product Review </h1></div>
+
+        <form action="review.html" method="get" class="wform">
+
+          <div class="container">
+            <legend for="product">Product Name:</legend>
+            <select name="product" id="product" required>
+                <option value="" disabled selected>Select a Product...</option>
+            </select>
+          </div>
+
+          <div class="container">
+            <legend for="rating">Overal Rating:</legend>
+              <div class="start-rating">
+
+                <label for="star5">1&#9733;<input type="radio" id="star5" name="rating" value="5" required></label>
+                <label for="star4">2&#9733;<input type="radio" id="star4" name="rating" value="4" required></label>
+                <label for="star3">3&#9733;<input type="radio" id="star3" name="rating" value="3" required></label>
+                <label for="star2">4&#9733;<input type="radio" id="star2" name="rating" value="2" required></label>
+                <label for="star1">5&#9733;<input type="radio" id="star1" name="rating" value="1" required></label>
+              </div>
+          </div>
+
+          <div class="container">
+            <legend for="installdate">Date Of Intallation:</legend>
+            <input type="date" id="installdate" name="installdate" required>
+          </div>
+
+
+          <div class="container">
+            <legend>Useful Features <i>(Check all that apply)</i>:</legend>
+            <label><input type="checkbox" id="feature1" name="feature" value="Feature 1"> Durability</label><br>
+            <label><input type="checkbox" id="feature2" name="feature" value="Feature 2"> Ease of use</label><br>
+            <label><input type="checkbox" id="feature3" name="feature" value="Feature 3"> Performance</label><br>
+            <label><input type="checkbox" id="feature4" name="feature" value="Feature 4"> Design</label><br>
+          </div>
+
+
+          <div class="container">
+            <legend for="review">Written Review <i>(Optional)</i>:</legend>
+            <textarea id="review" name="review" rows="4" cols="50"></textarea>
+          </div>
+
+          <div class="container">
+            <legend for="username">User Name <i>(Optional)</i>:</legend>
+            <input type="text" id="username" name="username">
+          </div>
+
+          <input type="submit" value="Post Review">
+
+        </form>
+
+
+
+    </main>
+
+    
+
+    <footer>
+        
+        <p>
+          &#169;<span id="currentYear"></span> Mateo Barrios Acosta - Barranquilla, Colombia
+        </p>
+  
+        <p>
+          <span id="lastModified"></span>
+        </p>
+  
+      </footer>
+
+
+  </body>
+
+</html>

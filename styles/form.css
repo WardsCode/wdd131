@@ -1,0 +1,77 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    max-width: 450px;
+}
+
+h1{
+    color: white;
+    background-color: #0f34ac ;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px ;
+    border-radius: 6px;
+}
+
+.wform{
+    border: 1px solid black;
+    border-radius: 6px;
+    padding:20px;
+    background-color: lightgray;
+    
+}
+
+.wform legend, input[type=text], input[type=date], select {
+    display: block;
+    width: 100%;
+
+}
+
+.wform legend{
+    color: #0f34ac;
+    font-weight: bolder;
+}
+
+input[type=text], input[type=date], select{
+    height: 34px;
+}
+
+
+.container{
+    margin-bottom: 20PX;
+}
+
+
+i{
+    font-weight: lighter;
+}
+
+.start-rating{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.wform textarea{
+    width: 100%;
+    
+}
+
+.wform input[type=submit]{
+    width: 100%;
+    font-weight: bolder;
+    height: 34px;
+    font-size: larger;
+}
+
+
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #0f34ac ;
+    padding: 20px;
+    margin-top: 20px ;
+    border-radius: 6px;
+}
