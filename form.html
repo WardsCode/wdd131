@@ -3,12 +3,12 @@
 <html lang="en-US">
 
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>WDD 131 - Dynamic Web Fundamentals - Mateo Barrios </title>
     <meta name="description" content="This page contains a form and it is to example how to create one, using JS and CSS.">
     <meta name="author" content="Mateo Barrios Acosta">
-    <script src="scripts/form.js" ></script>
+    <script src="scripts/form.js" defer></script>
     <link rel="stylesheet" href="styles/form.css">
 
   
@@ -22,15 +22,17 @@
 
         <form action="review.html" method="get" class="wform">
 
+          <legend for="product">Product Name:</legend>
           <div class="container">
-            <legend for="product">Product Name:</legend>
+            
             <select name="product" id="product" required>
                 <option value="" disabled selected>Select a Product...</option>
             </select>
           </div>
 
+          <legend for="rating">Overal Rating:</legend>
           <div class="container">
-            <legend for="rating">Overal Rating:</legend>
+            
               <div class="start-rating">
 
                 <label for="star5">1&#9733;<input type="radio" id="star5" name="rating" value="5" required></label>
@@ -41,28 +43,27 @@
               </div>
           </div>
 
+
+          <legend for="installdate">Date Of Intallation:</legend>
           <div class="container">
-            <legend for="installdate">Date Of Intallation:</legend>
+            
             <input type="date" id="installdate" name="installdate" required>
           </div>
 
-
+          <legend>Useful Features <i>(Check all that apply)</i>:</legend>
           <div class="container">
-            <legend>Useful Features <i>(Check all that apply)</i>:</legend>
             <label><input type="checkbox" id="feature1" name="feature" value="Feature 1"> Durability</label><br>
             <label><input type="checkbox" id="feature2" name="feature" value="Feature 2"> Ease of use</label><br>
             <label><input type="checkbox" id="feature3" name="feature" value="Feature 3"> Performance</label><br>
             <label><input type="checkbox" id="feature4" name="feature" value="Feature 4"> Design</label><br>
           </div>
 
-
+          <legend for="review">Written Review <i>(Optional)</i>:</legend>
           <div class="container">
-            <legend for="review">Written Review <i>(Optional)</i>:</legend>
             <textarea id="review" name="review" rows="4" cols="50"></textarea>
           </div>
-
+          <legend for="username">User Name <i>(Optional)</i>:</legend>
           <div class="container">
-            <legend for="username">User Name <i>(Optional)</i>:</legend>
             <input type="text" id="username" name="username">
           </div>
 
