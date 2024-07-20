@@ -81,6 +81,10 @@ p{
     font-family: var(--semititle);
 }
 
+li {
+    font-family: var(--title);
+}
+
 .nav-links.show {
     display: flex;
 }
