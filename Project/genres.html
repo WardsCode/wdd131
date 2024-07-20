@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genre Page</title>
+    <meta name="description" content="This is a webcomic website where people around the world can read any story they like">
+    <meta name="author" content="Mateo Barrios Acosta">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bubblegum+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Bubblegum+Sans&display=swap');
+    </style>
+    <link rel="stylesheet" href="style/genre.css">
+    <script src="script/genre.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-logo">
+                <a id="menu" href="#"></a>
+                <div class="logo">Webcomic</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">
+                    <i class="fa_search"><img src="images/search-interface-symbol.png" alt="" width="15px"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="filter-bar">
+            <button class="filter-button" data-genre="all">All</button>
+            <button class="filter-button" data-genre="comedy">Comedy</button>
+            <button class="filter-button" data-genre="drama">Drama</button>
+            <button class="filter-button" data-genre="fantasy">Fantasy</button>
+            <button class="filter-button" data-genre="horror">Horror</button>
+            <button class="filter-button" data-genre="romance">Romance</button>
+            <button class="filter-button" data-genre="sci-fi">Sci-Fi</button>
+        </section>
+        <section class="comic-grid" id="comic-grid">
+            
+        </section>
+    </main>
+    <footer>
+        <p>
+            &#169;<span id="currentYear"></span> Mateo Barrios Acosta - Barranquilla, Colombia
+        </p>
+        <p>
+            <span id="lastModified"></span>
+        </p>  
+    </footer>
+</body>
+</html>

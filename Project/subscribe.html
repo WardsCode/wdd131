@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcomic Website</title>
+    <meta name="description" content="This is a webcomic website where people around the world can read any story they like">
+    <meta name="author" content="Mateo Barrios Acosta">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bubblegum+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Bubblegum+Sans&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="style/subscribe.css">
+    <script src="script/subscribe.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-logo">
+                <a id="menu" href="#"></a>
+                <div class="logo">Webcomic</div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <button type="submit">
+                    <i class="fa_search"><img src="images/search-interface-symbol.png" alt="" width="15px"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="subscribe">
+
+        <div class="feature-area">
+            <img src="images/landscape.webp" alt="">
+            <ul>
+                <li>Access to exclusive content</li>
+                <li>Early access to new releases</li>
+                <li>Discounts on merchandise</li>
+            </ul>
+        </div>
+
+
+
+        <div class="form-container">
+            <h2>Subscribe to Our Latest Stories</h2>
+
+            <form action="" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn"><strong>Become a Member!</strong></button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&#169; Mateo Barrios Acosta - Barranquilla, Colombia</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

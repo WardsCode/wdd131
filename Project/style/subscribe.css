@@ -1,0 +1,264 @@
+:root {
+    --primary_color: #ffA101;
+    --secondary_color: #FAe6b1;
+    --background_color: #b3dee5;
+    --text_color: #000000;
+    --accent_color: #31525b;
+    --title: "Bubblegum Sans", Serif;
+    --semititle: "Acme", serif;
+    --accent: "Bangers", serif;
+}
+
+
+
+li {
+    font-family: var(--title);
+}
+
+.logo {
+    font-family: var(--title);
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--secondary_color);
+}
+.subscribe {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feature-area {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.feature-area img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.feature-area ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.feature-area li {
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.form-container {
+    text-align: left;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    margin-right: 10px;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+}
+
+.form-group input, .form-group select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 5;
+}
+
+.form-group input[type="number"] {
+    width: 100px;
+}
+
+.form-container button {
+    padding: 0.8rem 1.5rem;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-container button:hover {
+    background-color: #d35400;
+}
+
+header {
+    background-color: var(--primary_color);
+    color: white;
+    padding: 1rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary_color);
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    background: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-container i {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--primary_color);
+    color: white;
+}
+
+@media (min-width: 980px) {
+
+
+
+
+
+
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+    
+    .featured {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .comic-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+}
