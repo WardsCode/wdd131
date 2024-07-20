@@ -9,8 +9,6 @@
     --accent: "Bangers", serif;
 }
 
-
-
 li {
     font-family: var(--title);
 }
@@ -19,11 +17,11 @@ li {
     font-family: var(--title);
 }
 
-
 body {
     margin: 0;
     background-color: var(--secondary_color);
 }
+
 .subscribe {
     max-width: 600px;
     margin: 3rem auto;
@@ -221,12 +219,6 @@ footer {
 }
 
 @media (min-width: 980px) {
-
-
-
-
-
-
     .nav-links {
         position: static;
         display: flex;
@@ -256,9 +248,4 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
     }
-
-
-
-
-
 }
