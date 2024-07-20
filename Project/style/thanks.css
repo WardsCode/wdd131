@@ -1,0 +1,156 @@
+:root {
+    --primary_color: #ffA101;
+    --secondary_color: #FAe6b1;
+    --background_color: #b3dee5;
+    --text_color: #000000;
+    --accent_color: #31525b;
+
+    --title: "Bubblegum Sans", Serif;
+    --semititle: "Acme", serif;
+    --accent: "Bangers", serif;
+}
+
+body {
+    margin: 0;
+    background-color: var(--secondary_color);
+}
+
+header {
+    background-color: var(--primary_color);
+    color: white;
+    padding: 1rem;
+    position: relative;
+    z-index: 1000;
+}
+
+.menu-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: white;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary_color);
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+p{
+    font-family: var(--semititle);
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0;
+    text-align: center;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+.nav-links a:hover {
+    background-color: #555;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-container button {
+    background: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.search-container i {
+    color: #333;
+}
+
+@media (min-width: 980px) {
+    .nav-links {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-links li {
+        display: block;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
+
+.thanks-message {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--background_color);
+}
+
+footer {
+    background-color: var(--primary_color);
+    text-align: center;
+    padding: 1rem;
+}

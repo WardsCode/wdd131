@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thank You for Subscribing!</title>
+    <meta name="description" content="This is a webcomic website where people around the world can read any story they like">
+    <meta name="author" content="Mateo Barrios Acosta">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bubblegum+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Acme&family=Bangers&family=Bubblegum+Sans&display=swap');
     </style>
-    <link rel="stylesheet" href="style/subscribe.css">
+    <link rel="stylesheet" href="style/thanks.css">
     <script src="script/thanks.js" defer></script>
 </head>
 <body>
@@ -32,15 +34,16 @@
             </div>
         </nav>
     </header>
-    <section class="subscribe">
-        <div class="form-container">
-            <h2>Thank You for Subscribing!</h2>
-            <p>Your subscription has been received. Stay tuned for our latest stories and updates.</p>
+    <main>
+        <section class="thanks-message">
+            <h1>Thank You for Subscribing!</h1>
+            <p>We appreciate your support and hope you enjoy our webcomics.</p>
             <p>You are subscriber number: <span id="subscriberCount">0</span></p>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
         <p>&#169; Mateo Barrios Acosta - Barranquilla, Colombia</p>
+        <p><span id="lastModified"></span></p>
     </footer>
 </body>
 </html>
